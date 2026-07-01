@@ -182,7 +182,15 @@ section{padding:76px 0;}
   stroke:var(--gold-soft);
   stroke-width:1.5;
   stroke-dasharray:5 6;
-  opacity:0.85;
+  animation:route-draw 1.6s ease-out both;
+}
+.route-map .path:nth-of-type(1){animation-delay:.15s;}
+.route-map .path:nth-of-type(2){animation-delay:.4s;}
+.route-map .path:nth-of-type(3){animation-delay:.65s;}
+.route-map .path:nth-of-type(4){animation-delay:1.05s;}
+@keyframes route-draw{
+  from{stroke-dashoffset:220; opacity:0;}
+  to{stroke-dashoffset:0; opacity:0.85;}
 }
 .route-map .pin circle{fill:var(--rose); stroke:var(--paper); stroke-width:1.5;}
 .route-map .pin.dest circle{fill:var(--gold);}
@@ -197,6 +205,15 @@ section{padding:76px 0;}
 .route-map .transit-icon rect,
 .route-map .transit-icon circle{fill:var(--gold-soft);}
 .route-map .transit-icon .train-window{fill:var(--bordeaux-deep);}
+.route-map .transit-icon{animation:icon-pop .5s ease-out both;}
+.route-map .transit-icon:nth-of-type(1){animation-delay:1.55s;}
+.route-map .transit-icon:nth-of-type(2){animation-delay:1.8s;}
+.route-map .transit-icon:nth-of-type(3){animation-delay:2.05s;}
+.route-map .transit-icon:nth-of-type(4){animation-delay:2.45s;}
+@keyframes icon-pop{
+  from{opacity:0; scale:0.5;}
+  to{opacity:1; scale:1;}
+}
 
 /* ---------- Buttons ---------- */
 .btn{
@@ -482,3 +499,22 @@ footer{
   font-size:0.85rem;
 }
 footer .brand-mini{font-family:var(--display); color:var(--gold-soft); font-size:1.1rem; margin-bottom:8px;}
+
+/* ---------- Scroll reveal (hub cards, spot cards, boarding passes) ---------- */
+.reveal{transition:opacity .6s ease-out, translate .6s ease-out;}
+.reveal.reveal-hidden{opacity:0; translate:0 18px;}
+
+/* ---------- Boarding-pass ratio "stamp" pop-in ---------- */
+.pass-ratio{
+  transition:scale .4s cubic-bezier(0.34,1.56,0.64,1), opacity .3s ease-out;
+  transition-delay:.25s;
+}
+.pass.reveal-hidden .pass-ratio{opacity:0; scale:0.6;}
+
+/* ---------- Reduced motion ---------- */
+@media (prefers-reduced-motion: reduce){
+  .route-map .path, .route-map .transit-icon{animation:none; opacity:0.85;}
+  .route-map .transit-icon{opacity:1;}
+  .reveal, .reveal.reveal-hidden{transition:none; opacity:1; translate:none;}
+  .pass-ratio, .pass.reveal-hidden .pass-ratio{transition:none; opacity:1; scale:1;}
+}
