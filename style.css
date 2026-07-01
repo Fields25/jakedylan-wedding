@@ -187,7 +187,6 @@ section{padding:76px 0;}
 .route-map .path:nth-of-type(1){animation-delay:.15s;}
 .route-map .path:nth-of-type(2){animation-delay:.4s;}
 .route-map .path:nth-of-type(3){animation-delay:.65s;}
-.route-map .path:nth-of-type(4){animation-delay:1.05s;}
 @keyframes route-draw{
   from{stroke-dashoffset:220; opacity:0;}
   to{stroke-dashoffset:0; opacity:0.85;}
@@ -206,10 +205,9 @@ section{padding:76px 0;}
 .route-map .transit-icon circle{fill:var(--gold-soft);}
 .route-map .transit-icon .train-window{fill:var(--bordeaux-deep);}
 .route-map .transit-icon{animation:icon-pop .5s ease-out both;}
-.route-map .transit-icon:nth-of-type(1){animation-delay:1.55s;}
-.route-map .transit-icon:nth-of-type(2){animation-delay:1.8s;}
-.route-map .transit-icon:nth-of-type(3){animation-delay:2.05s;}
-.route-map .transit-icon:nth-of-type(4){animation-delay:2.45s;}
+.route-map .transit-icon:nth-of-type(1){animation-delay:1.8s;}
+.route-map .transit-icon:nth-of-type(2){animation-delay:2.05s;}
+.route-map .transit-icon:nth-of-type(3){animation-delay:2.3s;}
 @keyframes icon-pop{
   from{opacity:0; scale:0.5;}
   to{opacity:1; scale:1;}

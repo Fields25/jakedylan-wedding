@@ -32,7 +32,7 @@ covers everything Zola can't).
 - **Venue:** Villa Arvedi
 - **Welcome Party:** Friday, August 20, 2027
 - **Wedding Day:** Saturday, August 21, 2027
-- **Guests flying in from:** Miami (MIA), San Francisco (SFO), New York (JFK)
+- **Guests flying in from:** Miami (MIA), New York (JFK or Newark/EWR)
 - **Hotels:** TBD — not yet built into the site, needs a dedicated section once venue
   confirms room blocks
 
@@ -75,7 +75,7 @@ Defined in `style.css` as CSS custom properties on `:root`.
 |---|---|---|
 | `style.css` | Complete | Shared design system, all pages import this |
 | `index.html` | Complete | Homepage/hub — hero with route map, links to Travel and Verona Guide pages, schedule timeline |
-| `travel.html` | Complete | Three-tab page: (1) Flights — nonstop routes from MIA/SFO/JFK to Milan MXP, (2) Points Transfers — Amex/Chase/Capital One/Bilt boarding-pass-style cards, (3) Milan → Verona — train booking steps + private transfer comparison table |
+| `travel.html` | Complete | Four-tab page: (1) Flights — nonstop routes from MIA/JFK/EWR to Milan MXP, (2) Points Transfers — Amex/Chase/Capital One/Bilt boarding-pass-style cards, (3) Milan → Verona — train booking steps + private transfer comparison table, (4) Hotels — placeholder |
 | `verona-guide.html` | **Not built yet** | Linked from nav on every page but currently 404s. Next task — see below. |
 
 ## Research already done (don't re-research from scratch — verify/update instead)
@@ -88,11 +88,10 @@ transfer partner terms change:
   only nonstop option from Miami.
 - **New York (JFK) → Milan (MXP):** American (year-round), Delta (seasonal), Emirates
   (year-round) all fly nonstop.
-- **San Francisco (SFO) → Milan (MXP):** No nonstop. Best options are United (Star
-  Alliance) via a hub, or a one-stop on a European carrier (Lufthansa/Swiss/Air France).
+- **New York (EWR) → Milan (MXP):** United flies nonstop, roughly daily (~8.5 hrs).
 - **Points transfer partners relevant to this trip:**
   - Amex Membership Rewards → Emirates Skywards at 5:4 (covers JFK nonstop)
-  - Chase Ultimate Rewards → United MileagePlus at 1:1 (best for SFO connections)
+  - Chase Ultimate Rewards → United MileagePlus at 1:1 (covers the EWR nonstop)
   - Capital One Miles → Emirates Skywards at 2:1.5, or Avios/Aeroplan at 1:1
   - Bilt Rewards → **both** Emirates Skywards and United MileagePlus at 1:1 — flagged
     on the site as the strongest single option since it covers both routes at full value
