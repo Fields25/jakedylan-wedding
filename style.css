@@ -284,6 +284,14 @@ section{padding:76px 0;}
   color:var(--gold);
   margin-bottom:4px;
 }
+.pass-issuer-row{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  margin-bottom:4px;
+}
+.pass-issuer-row .pass-issuer{margin-bottom:0;}
+.issuer-logo{height:24px; width:auto; max-width:130px; object-fit:contain; flex-shrink:0;}
 .pass-ratio{
   font-family:var(--mono);
   font-size:0.95rem;
@@ -378,6 +386,8 @@ section{padding:76px 0;}
 }
 .rt-node .code{font-size:1.5rem; color:var(--bordeaux); font-weight:700;}
 .rt-node .label{font-size:0.7rem; color:#7a6a60; text-transform:uppercase; letter-spacing:0.06em;}
+.section-dark .rt-node .code{color:var(--gold-soft);}
+.section-dark .rt-node .label{color:#e9d3c8;}
 .rt-connector{
   flex:1;
   min-width:70px;
