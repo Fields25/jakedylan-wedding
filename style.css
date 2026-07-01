@@ -115,7 +115,8 @@ img{max-width:100%;display:block;}
     font-size:0.7rem;
     letter-spacing:0.08em;
     text-transform:uppercase;
-    padding:8px 12px;
+    padding:13px 16px;
+    min-height:44px;
     border-radius:var(--radius);
   }
 }
@@ -457,15 +458,19 @@ th{font-family:var(--mono); font-size:0.7rem; letter-spacing:0.08em; text-transf
 .spot-desc{font-size:0.9rem; color:#4a352c; margin:0; flex:1;}
 .spot-tags{margin-top:2px;}
 .spot-map{
-  margin-top:16px;
+  margin:8px -4px 0;
+  padding:11px 4px;
+  min-height:44px;
+  box-sizing:border-box;
   display:inline-flex; align-items:center; gap:6px;
   font-family:var(--mono); font-size:0.72rem; letter-spacing:0.06em; text-transform:uppercase;
-  color:var(--bordeaux); text-decoration:none; align-self:flex-start;
-  border-bottom:1px solid var(--bordeaux);
-  padding-bottom:2px;
-  transition:color .2s, border-color .2s;
+  color:var(--bordeaux);
+  text-decoration:underline;
+  text-underline-offset:3px;
+  align-self:flex-start;
+  transition:color .2s;
 }
-.spot-map:hover{color:var(--bordeaux-bright); border-color:var(--bordeaux-bright);}
+.spot-map:hover{color:var(--bordeaux-bright);}
 .spot-map svg{width:12px; height:12px;}
 
 /* ---------- Footer ---------- */
