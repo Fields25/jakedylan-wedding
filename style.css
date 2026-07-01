@@ -192,6 +192,10 @@ section{padding:76px 0;}
   letter-spacing:0.05em;
 }
 .route-map .sub{fill:#c9a8a0; font-size:9px;}
+.route-map .transit-icon path,
+.route-map .transit-icon rect,
+.route-map .transit-icon circle{fill:var(--gold-soft);}
+.route-map .transit-icon .train-window{fill:var(--bordeaux-deep);}
 
 /* ---------- Buttons ---------- */
 .btn{
