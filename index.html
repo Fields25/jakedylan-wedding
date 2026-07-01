@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jake &amp; Dylan — Verona, 2027</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="wrap">
+    <a href="index.html" class="brand">J &amp; D — Verona</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">Menu</button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="travel.html">Flights &amp; Trains</a></li>
+      <li><a href="verona-guide.html">Verona Guide</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <p class="eyebrow on-dark">Villa Arvedi · Verona, Italy</p>
+    <h1>Getting to<br>the wedding.</h1>
+    <p class="lede" style="color:#e9d3c8; margin-top:18px;">Everything you need to fly in from Miami, San Francisco, or New York, transfer points into the right airline, and make the last leg from Milan to Verona — all in one place.</p>
+    <div class="hero-dates">
+      <span>Welcome Party — Fri, Aug 20, 2027</span>
+      <span>Wedding Day — Sat, Aug 21, 2027</span>
+      <span>Venue — Villa Arvedi</span>
+    </div>
+
+    <svg class="route-map" viewBox="0 0 900 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Flight paths from Miami, San Francisco, and New York to Milan, then train to Verona">
+      <path class="path" d="M 90 60 C 300 10, 500 40, 640 110" />
+      <path class="path" d="M 70 190 C 280 150, 480 90, 640 110" />
+      <path class="path" d="M 110 220 C 300 200, 470 150, 640 110" />
+      <path class="path" d="M 660 112 C 700 105, 740 108, 770 112" stroke-dasharray="2 4" />
+
+      <g class="pin"><circle cx="90" cy="60" r="4"/><text x="102" y="57">SFO</text><text class="sub" x="102" y="70">San Francisco</text></g>
+      <g class="pin"><circle cx="70" cy="190" r="4"/><text x="82" y="187">MIA</text><text class="sub" x="82" y="200">Miami</text></g>
+      <g class="pin"><circle cx="110" cy="220" r="4"/><text x="122" y="217">JFK</text><text class="sub" x="122" y="230">New York</text></g>
+
+      <g class="pin dest"><circle cx="645" cy="110" r="5"/><text x="657" y="107">MXP</text><text class="sub" x="657" y="120">Milan Malpensa</text></g>
+      <g class="pin dest"><circle cx="790" cy="113" r="5"/><text x="802" y="110">VRN</text><text class="sub" x="802" y="123">Verona</text></g>
+    </svg>
+  </div>
+</header>
+
+<section class="paper-texture">
+  <div class="wrap">
+    <p class="eyebrow">Start here</p>
+    <h2>Two pages, everything mapped out.</h2>
+    <p class="lede">We've done the research on points transfers, flight routings, and train bookings so you don't have to. Pick where you're starting.</p>
+
+    <div class="hub-grid">
+      <a href="travel.html" class="hub-card">
+        <span class="num">01</span>
+        <h3>Flights, Points &amp; Trains</h3>
+        <p>Which airlines fly nonstop from your city, how to turn Amex, Chase, Capital One, or Bilt points into a ticket, and exactly how to get from the airport to Verona.</p>
+        <span class="btn" style="margin-top:auto; align-self:flex-start;">View guide →</span>
+      </a>
+      <a href="verona-guide.html" class="hub-card">
+        <span class="num">02</span>
+        <h3>Verona &amp; the Veneto</h3>
+        <p>Where to eat, what to see, and the local specialties worth seeking out before or after the wedding weekend.</p>
+        <span class="btn" style="margin-top:auto; align-self:flex-start;">Explore Verona →</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="section-dark">
+  <div class="wrap">
+    <p class="eyebrow on-dark">The weekend</p>
+    <h2>Schedule at a glance</h2>
+    <div class="route-timeline" style="margin-top:44px;">
+      <div class="rt-node">
+        <div class="code">FRI</div>
+        <div class="label">Aug 20</div>
+        <p style="font-family:var(--body); font-size:0.9rem; margin-top:8px; color:#e9d3c8;">Welcome Party</p>
+      </div>
+      <div class="rt-connector"></div>
+      <div class="rt-node">
+        <div class="code">SAT</div>
+        <div class="label">Aug 21</div>
+        <p style="font-family:var(--body); font-size:0.9rem; margin-top:8px; color:#e9d3c8;">Wedding Day, Villa Arvedi</p>
+      </div>
+    </div>
+    <p class="pass-note" style="color:#cbb6ae;">Hotel recommendations are coming soon — we'll share a block once rates are confirmed so you can book early.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p class="brand-mini">Jake &amp; Dylan</p>
+    <p>Verona, Italy · August 21, 2027</p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('navToggle').addEventListener('click', function(){
+    document.getElementById('navLinks').classList.toggle('open');
+  });
+</script>
+
+</body>
+</html>

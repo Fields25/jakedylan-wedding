@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flights &amp; Trains — Jake &amp; Dylan, Verona 2027</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="wrap">
+    <a href="index.html" class="brand">J &amp; D — Verona</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">Menu</button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="travel.html" class="active">Flights &amp; Trains</a></li>
+      <li><a href="verona-guide.html">Verona Guide</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero" style="padding:64px 0 50px;">
+  <div class="wrap">
+    <p class="eyebrow on-dark">MIA · SFO · JFK → MXP → VRN</p>
+    <h1 style="font-size:clamp(2.2rem,5vw,3.4rem);">Flights, points &amp; the final leg to Verona</h1>
+    <p class="lede" style="color:#e9d3c8; margin-top:14px;">Guests are flying in from Miami, San Francisco, and New York. Here's the fastest way to get to Milan, how to stretch your credit card points into that ticket, and exactly how to cover the last 90 miles to Verona.</p>
+  </div>
+</header>
+
+<section class="paper-texture" style="padding-bottom:0;">
+  <div class="wrap">
+    <div class="tabs">
+      <button class="tab-btn active" data-tab="flights">01 · Flights</button>
+      <button class="tab-btn" data-tab="points">02 · Points Transfers</button>
+      <button class="tab-btn" data-tab="trains">03 · Milan → Verona</button>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== TAB 1: FLIGHTS ===================== -->
+<section class="paper-texture tab-panel active" id="flights" style="padding-top:0;">
+  <div class="wrap">
+    <h2>Who flies where, nonstop</h2>
+    <p class="lede">Guests land at Milan Malpensa (MXP). Here's the reality of each route as of mid-2026 — worth checking again closer to booking, since airline schedules shift.</p>
+
+    <div class="route-timeline" style="margin:40px 0 10px;">
+      <div class="rt-node"><div class="code">MIA</div><div class="label">Miami</div></div>
+      <div class="rt-connector"><span class="time">American · nonstop · daily</span></div>
+      <div class="rt-node"><div class="code">MXP</div><div class="label">Milan</div></div>
+    </div>
+    <p class="pass-note">American Airlines flies nonstop, year-round, daily on a 787 — the only nonstop option out of Miami. This is the easiest route on the list.</p>
+
+    <div class="route-timeline" style="margin:40px 0 10px;">
+      <div class="rt-node"><div class="code">JFK</div><div class="label">New York</div></div>
+      <div class="rt-connector"><span class="time">AA · Delta (seasonal) · Emirates</span></div>
+      <div class="rt-node"><div class="code">MXP</div><div class="label">Milan</div></div>
+    </div>
+    <p class="pass-note">Three nonstop options from New York: American (year-round), Delta (seasonal), and Emirates (year-round, JFK only). Emirates is the one worth knowing about for points — more on that in the next tab.</p>
+
+    <div class="route-timeline" style="margin:40px 0 10px;">
+      <div class="rt-node"><div class="code">SFO</div><div class="label">San Francisco</div></div>
+      <div class="rt-connector"><span class="time">no nonstop · 1 stop</span></div>
+      <div class="rt-node"><div class="code">MXP</div><div class="label">Milan</div></div>
+    </div>
+    <p class="pass-note">There's no nonstop from San Francisco. The most straightforward connection is United through a hub (Star Alliance), or a one-stop on a European carrier like Lufthansa, Swiss, or Air France via their home hub. Build in a little extra connection time.</p>
+
+    <div class="callout">
+      <strong>Heads up:</strong> none of the major transferable points programs (Amex, Chase, Capital One, or Bilt) transfer to American Airlines' AAdvantage program — no card does. If you specifically want to fly American on the Miami or JFK nonstop, that's a cash fare or AAdvantage miles you've earned directly, not a transfer.
+    </div>
+  </div>
+</section>
+
+<!-- ===================== TAB 2: POINTS ===================== -->
+<section class="section-dark tab-panel" id="points">
+  <div class="wrap">
+    <h2>Turning points into a ticket</h2>
+    <p class="lede">If you carry Amex, Chase, Capital One, or Bilt, here's where those points can actually go for this trip — and where they can't. Ratios and partners shift over time, so double check inside your account before transferring; transfers are one-way and final.</p>
+
+    <div style="margin-top:44px;">
+
+      <div class="pass">
+        <div class="pass-main">
+          <div class="pass-issuer">American Express · Membership Rewards</div>
+          <div class="pass-route">AMEX <span class="arrow">→</span> EK</div>
+          <p class="pass-note" style="color:#4a352c;">Transfers to Emirates Skywards at a 5:4 ratio (1,000 Amex points → 800 Skywards miles) — useful for the JFK–Milan nonstop. Also transfers 1:1 to British Airways Avios and Iberia, which can route through London or Madrid onto Milan.</p>
+          <span class="tag">JFK route</span><span class="tag gold">5:4 ratio</span>
+        </div>
+        <div class="pass-stub">
+          <span class="pass-ratio-label">Ratio</span>
+          <span class="pass-ratio">5 : 4</span>
+        </div>
+      </div>
+
+      <div class="pass">
+        <div class="pass-main">
+          <div class="pass-issuer">Chase · Ultimate Rewards</div>
+          <div class="pass-route">CHASE <span class="arrow">→</span> UA</div>
+          <p class="pass-note" style="color:#4a352c;">Transfers 1:1 to United MileagePlus — the most useful path for San Francisco guests connecting through United's Star Alliance network. No penalty ratio, and no Emirates or American Airlines partnership from Chase.</p>
+          <span class="tag">SFO route</span><span class="tag gold">1:1 ratio</span>
+        </div>
+        <div class="pass-stub">
+          <span class="pass-ratio-label">Ratio</span>
+          <span class="pass-ratio">1 : 1</span>
+        </div>
+      </div>
+
+      <div class="pass">
+        <div class="pass-main">
+          <div class="pass-issuer">Capital One · Miles</div>
+          <div class="pass-route">C1 <span class="arrow">→</span> EK / BA</div>
+          <p class="pass-note" style="color:#4a352c;">Transfers to Emirates Skywards at 2:1.5 (1,000 miles → 750 Skywards miles) for the JFK nonstop, or 1:1 to British Airways Avios / Air Canada Aeroplan for one-stop Star Alliance or Oneworld routings.</p>
+          <span class="tag">JFK route</span><span class="tag gold">2:1.5 ratio</span>
+        </div>
+        <div class="pass-stub">
+          <span class="pass-ratio-label">Ratio</span>
+          <span class="pass-ratio">2 : 1.5</span>
+        </div>
+      </div>
+
+      <div class="pass">
+        <div class="pass-main">
+          <div class="pass-issuer">Bilt · Rewards</div>
+          <div class="pass-route">BILT <span class="arrow">→</span> EK / UA</div>
+          <p class="pass-note" style="color:#4a352c;">The strongest all-around option for this wedding: full 1:1 transfers to <em>both</em> Emirates Skywards (JFK nonstop) and United MileagePlus (best SFO connection) — no other program covers both routes at full value.</p>
+          <span class="tag">JFK + SFO</span><span class="tag gold">1:1 ratio</span>
+        </div>
+        <div class="pass-stub">
+          <span class="pass-ratio-label">Ratio</span>
+          <span class="pass-ratio">1 : 1</span>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="callout" style="background:rgba(227,197,114,0.1); border-left-color:var(--gold-soft);">
+      <strong style="color:var(--gold-soft);">Before you transfer:</strong> confirm the actual award seat is available on the airline's site first — transfers can't be reversed. If you're not sure which program to use, Bilt covers the most ground for this specific trip.
+    </div>
+  </div>
+</section>
+
+<!-- ===================== TAB 3: TRAINS ===================== -->
+<section class="paper-texture tab-panel" id="trains">
+  <div class="wrap">
+    <h2>From Milan Malpensa to Verona</h2>
+    <p class="lede">You'll land at Malpensa (MXP), which sits outside Milan proper — so getting to Verona is really a two-step journey, plus a private-transfer shortcut if you'd rather skip the train altogether.</p>
+
+    <h3 style="margin-top:48px;">Option A — Airport train + high-speed rail</h3>
+    <div class="route-timeline">
+      <div class="rt-node"><div class="code">MXP</div><div class="label">Airport</div></div>
+      <div class="rt-connector"><span class="time">Malpensa Express · ~50 min</span></div>
+      <div class="rt-node"><div class="code">MIL</div><div class="label">Milano Centrale</div></div>
+      <div class="rt-connector"><span class="time">Frecciarossa / Italo · 1h10–1h20</span></div>
+      <div class="rt-node"><div class="code">VRN</div><div class="label">Verona P. Nuova</div></div>
+    </div>
+
+    <ol class="steps" style="margin-top:40px;">
+      <li>
+        <div>
+          <h3 style="font-size:1.05rem;">Take the Malpensa Express from the airport</h3>
+          <p class="pass-note">Direct train from the airport terminal to Milano Centrale, running roughly every 30 minutes. Buy at the station kiosk or in advance via the Trenord app.</p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <h3 style="font-size:1.05rem;">Book Milano Centrale → Verona Porta Nuova</h3>
+          <p class="pass-note">Around 30 direct high-speed trains run daily, operated by Trenitalia (Frecciarossa) or Italo, with the fastest at roughly 1 hour 10 minutes. Book directly at trenitalia.com or italotreno.com — both have English booking and apps. Reserve ahead for August travel, since it's peak season and trains do sell out on popular departures.</p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <h3 style="font-size:1.05rem;">Arrive at Verona Porta Nuova</h3>
+          <p class="pass-note">The station sits about a 20-minute walk (or short taxi) from the historic center. Villa Arvedi is outside the city center, so plan for a taxi, rideshare, or arranged transfer from the station.</p>
+        </div>
+      </li>
+    </ol>
+
+    <h3 style="margin-top:56px;">Option B — Private transfer, door to door</h3>
+    <p class="lede">Skip Milan entirely: a private car from Malpensa straight to Verona takes about 2.5 hours by road. Worth it if you're landing late, traveling with a group, or just don't want to manage two train legs with luggage. We'll share a recommended transfer company once we've vetted one — check back here closer to the date.</p>
+
+    <div class="table-wrap" style="margin-top:32px;">
+      <table>
+        <thead>
+          <tr><th>Option</th><th>Time</th><th>Best for</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Train (Malpensa Express + high-speed rail)</td><td>~2.5–3 hrs door to door</td><td>Light packers, budget-conscious, enjoy the ride</td></tr>
+          <tr><td>Private transfer</td><td>~2.5 hrs, no transfers</td><td>Groups, late arrivals, lots of luggage</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p class="brand-mini">Jake &amp; Dylan</p>
+    <p>Verona, Italy · August 21, 2027</p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('navToggle').addEventListener('click', function(){
+    document.getElementById('navLinks').classList.toggle('open');
+  });
+
+  const tabBtns = document.querySelectorAll('.tab-btn');
+  const panels = document.querySelectorAll('.tab-panel');
+  tabBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      tabBtns.forEach(b => b.classList.remove('active'));
+      panels.forEach(p => p.classList.remove('active'));
+      btn.classList.add('active');
+      document.getElementById(btn.dataset.tab).classList.add('active');
+    });
+  });
+</script>
+
+</body>
+</html>
